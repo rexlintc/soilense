@@ -1,0 +1,96 @@
+{
+  "document_type": "Geotechnical Report",
+  "checklist_info": {
+    "city_box_number": "3rd - 4th",
+    "checked_items": [
+      "Title/cover page w/the following info:",
+      "Company (author) name",
+      "Report Date",
+      "Project name",
+      "Site address (may be on 1st or 2nd page of text)",
+      "Project Location Plan/Map or Vicinity Map",
+      "Site Plans, Boring Location Plans, or Exploration Plans",
+      "Boring Logs",
+      "Soil Classification Key/Boring Log Key",
+      "Soils Lab Testing (Geotechnical) Summary Tables",
+      "Grain Size Analyses/Hydrometer Analyses"
+    ],
+    "date_copied": "6-30-99",
+    "copied_by": "AB",
+    "circled_number": "3"
+  },
+  "report_details": {
+    "company": "Earth Consultants Inc.",
+    "date": "June 14, 1979",
+    "project_number": "E-971",
+    "recipient": "Mr. Thomas A. Sconzo, Architect",
+    "recipient_address": "13219 Northup Way, Bellevue, Washington 98005",
+    "attention": "Mr. Thomas Sconzo",
+    "subject": "Soil and Foundation Investigation, Fourth Avenue South, Seattle, Washington"
+  },
+  "handwritten_notes": {
+    "address": "4401 4th Ave S.",
+    "number_below_address": "586907",
+    "fraction": "2/2",
+    "circled_number_top_right": "3"
+  },
+  "plates_summary": [
+    {
+      "plate_number": "1",
+      "title": "Proposed Warehouse & Office Building Fourth Avenue South Seattle, Washington",
+      "type": "Site Plan",
+      "reference": "Site Plan by Thomas A. Sconzo (March 5, 1979)",
+      "legend": "Approximate Boring Location"
+    },
+    {
+      "plate_number": "2",
+      "title": "SOIL CLASSIFICATION CHART",
+      "type": "Soil Classification Chart",
+      "company": "Earth Consultants Inc."
+    },
+    {
+      "plate_number": "3",
+      "title": "BORING NO. 1",
+      "type": "Boring Log",
+      "terminated_depth": "39 feet",
+      "termination_date": "5/7/79",
+      "driving_energy": "140 lb. Weight Dropping 30 inches",
+      "details_include": [
+        "Soil Description",
+        "USCS",
+        "Depth (ft.)",
+        "Sample",
+        "(N) Blows/Ft.",
+        "Wn (%)",
+        "Dry Density (pcf)"
+      ]
+    },
+    {
+      "plate_number": "4",
+      "title": "BORING NO. 2",
+      "type": "Boring Log",
+      "terminated_depth": "39 feet",
+      "termination_date": "5/8/79",
+      "driving_energy": "140 lb. Weight Dropping 30 inches",
+      "details_include": [
+        "Soil Description",
+        "USCS",
+        "Depth (ft.)",
+        "Sample",
+        "(N) Blows/Ft.",
+        "Wn (%)",
+        "Dry Density (pcf)"
+      ]
+    },
+    {
+      "plate_number": "5",
+      "title": "GRAIN SIZE ANALYSES",
+      "type": "Grain Size Analysis and Summary Table",
+      "location": "Proposed Warehouse & Office Building Fourth Avenue South Seattle, Washington",
+      "table_data_preview": [
+        {"BORING": "1", "DEPTH (ft)": "9", "USCS": "ML", "DESCRIPTION": "Fine sandy SILT.", "NAT. W.C.%": "30"},
+        {"BORING": "2", "DEPTH (ft)": "4", "USCS": "SM/SP", "DESCRIPTION": "Slightly silty fine to medium SAND.", "NAT. W.C.%": "12"}
+      ]
+    }
+  ]
+}

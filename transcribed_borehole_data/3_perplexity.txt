@@ -1,0 +1,162 @@
+Yes, I am able to parse and transcribe the text from the provided PDF file. Below is the extracted text, including checklists, correspondence, project details, soil classification charts, and boring log summaries. Note that some tables and images are referenced but not fully rendered in text due to their graphical nature.
+
+---
+
+**Checklist and Cover Information**
+
+- City box number $$\qquad$$ $$3^{-d}-4^{\text {dh }}$$
+- $$\square$$ Title/cover page with the following info:
+  - $$\square$$ Company (author) name
+  - E Report Date
+  - $$\square$$ Project name
+  - $$\square$$ Company's job number
+  - $$\square$$ City DCLU project number (7-digit number)
+  - $$\square$$ City Permit number (6-digit number)
+  - Kroll map index number (3-digit number, w?/E,W,N,S)
+  - $$\square$$ Green label
+  - $$\square$$ Site address (may be on $$1^{\text {st }}$$ or $$2^{\text {nd }}$$ page of text)
+  - $$\square$$ Executive Summary and associated figures
+  - $$\square$$ Table of Contents
+  - Project Location Plan/Map or Vicinity Map
+  - $$\square$$ Site Plans, Boring Location Plans, or Exploration Plans
+  - $$\square$$ Survey
+  - $$\square$$ Geologic Maps
+  - $$\square$$ Cross Sections/Subsurface Profiles
+  - $$\square$$ Eill or Peat Thickness Maps and Contour Maps
+  - $$\square$$ Boring Logs
+  - $$\square$$ Geology Text (if no logs)
+  - Soil Classification Key/Boring Log Key
+  - $$\square$$ Probe Logs
+  - $$\square$$ Test Pit Logs
+  - Monitoring Well Logs... Cone Penetrometer Logs
+  - $$\square$$ Shear Wave Velocity Measurements
+  - $$\square$$ Groundwater Maps
+  - $$\square$$ GW Elevation Tables/Data
+  - $$\square$$ Soils Lab Testing (Geotechnical) Summary Tables
+  - Grain Size Analyses/Hydrometer Analyses
+  - Atterberg Limits
+  - $$\square$$ Strength tests: Triaxial, Unconfined, Direct Shear
+  - $$\square$$ Organic Content
+  - - $${ }^{14} \mathrm{C}$$ or Radiocarbon Testing
+  - $$\square$$ Other $$\qquad$$
+  - $$\square$$ Soil Chemical Analytical Testing Summary Tables
+  - $$\square$$ Water/Groundwater Chemical Analytical Summary Tables
+  - $$\square$$ Comments $$\qquad$$
+  - $$\square$$ Date Copied $$\qquad$$ C-30-97 By $$\qquad$$
+
+---
+
+**Correspondence and Project Subject**
+
+June 14, 1979
+
+Mr. Thomas A. Sconzo, Architect  
+13219 Northup Way  
+Bellevue, Washington 98005
+
+Attention:  
+Mr. Thomas Sconzo
+
+Subject:  
+Soil and Foundation Investigation  
+Fourth Avenue South  
+Seattle, Washington
+
+---
+
+**Report Introduction**
+
+Gentlemen:
+
+In accordance with your request, this report presents the results of our soil and foundation investigation of the subject property. The purpose of this study was to supplement the existing subsurface data to provide recommendations for site development and foundation design.
+
+Our study indicates the site is underlain by loose granular soils which are likely to experience some settlements under the proposed building loads. However, construction of the proposed warehouse and office building at the site is feasible using conventional type footings and slabs based on recompacted native soil or structural fill provided the settlements can be tolerated by the building and incorporated into the structural design.
+
+The following sections describe the investigation and explain our recommendations in greater detail.
+
+---
+
+**Project Description**
+
+This study concerns the construction of a 62,000 square foot concrete tilt-up warehouse with a connecting two-story office building as shown schematically on the Site Plan, Plate 1. Maximum wall loads are expected to be on the order of 3 kips per lineal foot, dead plus live load, with maximum column loads of 75 kips. Floor design loads are estimated to be 250 psf. The floor slab will be dock high, requiring about 4 feet of fill above the existing grade.
+
+---
+
+**Soil Classification Chart (Summary)**
+
+- Major soil divisions and their USCS symbols are listed, such as:
+  - GW: Well-graded gravels, gravel-sand mixtures, little or no fines
+  - GP: Poorly-graded gravels, gravel-sand mixtures, little or no fines
+  - GM: Silty gravels, gravel-sand-silt mixtures
+  - GC: Clayey gravels, gravel-sand-clay mixtures
+  - SW: Well-graded sands, gravelly sands, little or no fines
+  - SP: Poorly-graded sands, gravelly sands, little or no fines
+  - SM: Silty sands, sand-silt mixtures
+  - SC: Clayey sands, sand-clay mixtures
+  - ML: Inorganic silts and very fine sands, rock flour, silty or clayey fine sands or clayey silts with slight plasticity
+  - CL: Inorganic clays of low to medium plasticity, gravelly clays, sandy clays, silty clays, lean clays
+  - OL: Organic silts and organic silty clays of low plasticity
+  - MH: Inorganic silts, micaceous or diatomaceous fine sandy or silty soils, elastic silts
+  - CH: Inorganic clays of high plasticity, fat clays
+  - OH: Organic clays of medium to high plasticity, organic silts
+  - PT: Peat, muck, and other highly organic soils
+
+- Additional notes:
+  - Dual symbols are used to indicate borderline soil classifications.
+  - The discussion in the text of this report is necessary for a proper understanding of the material presented in the attached logs.
+
+---
+
+**Sampling and Testing Key**
+
+- I: 2" O.D. Split Spoon Sampler
+- II: Ring or Shelby Sample
+- P: Sampler Pushed
+- *: Sample Not Recovered
+- 7: Water Level (date)
+- $$T_{s}$$: Torvane Reading
+- qu: Penetrometer Readings
+- Water Observation Well
+
+---
+
+**Boring Logs (Summarized)**
+
+**BORING NO. 1**
+
+- Soil Description:
+  - Brown, gravelly silty SAND, medium dense, moist (FILL)
+  - Black, silty fine SAND to fine sandy SILT, medium dense, wet
+  - Black, fine sandy SILT, loose, wet
+  - Black, slightly silty to silty, fine to medium SAND, loose becoming medium dense to dense, wet
+- Depth: Boring terminated at 39 feet on 5/7/79
+- Driving Energy: 140 lb. Weight Dropping 30 inches
+- W. O. No. E-971
+
+---
+
+**BORING NO. 2**
+
+- Soil Description:
+  - Brown, gravelly silty SAND, medium dense, moist (FILL)
+  - Black, slightly silty, fine to medium SAND
+  - Brown, fine sandy SILT, loose, wet, with some organics
+  - Black, silty fine to medium SAND, dense, wet
+- Depth: Boring terminated at 39 feet on 5/8/79
+- Driving Energy: 140 lb. Weight Dropping 30 inches
+- W. O. No. E-971
+
+---
+
+**Company**
+
+Earth Consultants
+
+---
+
+**Note:**  
+Some portions of the document, especially detailed tables and figures, are represented by image references and may not be fully transcribed here. If you need a more granular extraction (such as each table cell or image caption), please specify, and I can attempt to further process those sections.
+
+Sources
+[1] 3.pdf https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/30945587/c0f8c42a-cbd8-43e5-b791-90cc21a72899/3.pdf
+
