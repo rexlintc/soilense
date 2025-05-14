@@ -1,3 +1,7 @@
+# Training Data
+full_lithology_training_data.csv
+full_grouped_lithology_training_data.csv
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
