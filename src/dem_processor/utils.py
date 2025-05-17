@@ -1,6 +1,6 @@
 from osgeo import gdal, osr
 
-def get_dem_info(dem_path):
+def get_dem_info(dem_path=None, dataset=None):
     """
     Retrieves and prints information about a DEM's scale and units.
 
@@ -8,7 +8,8 @@ def get_dem_info(dem_path):
         dem_path (str): Path to the DEM file.
     """
     try:
-        dataset = gdal.Open(dem_path)
+        if dataset is None and dem_path is not None:
+            dataset = gdal.Open(dem_path)
         if dataset is None:
             print(f"Error: Could not open DEM file: {dem_path}")
             return
@@ -94,10 +95,6 @@ def get_dem_info(dem_path):
         else:
             print(f"  Determine based on confirmed horizontal and vertical units.")
         
-        if gdal.VersionInfo_ Ciò "VERSION_NUM" > "3010000": # GDAL 3.1+
-             print(f"  Note: GDAL versions 3.11+ can often automatically determine this scale for 'gdaldem'.")
-
-
         dataset = None # Close the dataset
 
     except Exception as e:
