@@ -1,9 +1,12 @@
+import logging
 import numpy as np
 from osgeo import gdal
+from typing import List
 import pandas as pd
 
+logger = logging.getLogger(__name__)
 
-def calculate_slope(dem_array, cell_size):
+def calculate_slope(dem_array: List[List], cell_size: float):
     """
     Calculates slope from a DEM array.
 
@@ -14,12 +17,12 @@ def calculate_slope(dem_array, cell_size):
     Returns:
         np.ndarray: 2D NumPy array of slope values in degrees.
     """
-    dy, dx = np.gradient(dem_array, cell_size, cell_size)
+    dy, dx = np.gradient(dem_array, cell_size)
     slope_rad = np.arctan(np.sqrt(dx**2 + dy**2))
     slope_deg = np.degrees(slope_rad)
     return slope_deg
 
-def calculate_aspect(dem_array, cell_size):
+def calculate_aspect(dem_array: List[List], cell_size: float):
     """
     Calculates aspect from a DEM array.
 
@@ -30,7 +33,7 @@ def calculate_aspect(dem_array, cell_size):
     Returns:
         np.ndarray: 2D NumPy array of aspect values in degrees (0-360).
     """
-    dy, dx = np.gradient(dem_array, cell_size, cell_size)
+    dy, dx = np.gradient(dem_array, cell_size)
     aspect_rad = np.arctan2(-dy, dx)  # Note: -dy for cartesian to geographic convention
     aspect_deg = np.degrees(aspect_rad)
     # Adjust aspect to 0-360 degrees, North = 0/360
@@ -54,11 +57,11 @@ def calculate_curvature(dem_array, cell_size):
         np.ndarray: 2D NumPy array of curvature values.
     """
     # First derivatives
-    dy, dx = np.gradient(dem_array, cell_size, cell_size)
+    dy, dx = np.gradient(dem_array, cell_size)
     
     # Second derivatives
-    d2y_dy, d2x_dy = np.gradient(dy, cell_size, cell_size) # d(dy)/dy, d(dx)/dy
-    d2y_dx, d2x_dx = np.gradient(dx, cell_size, cell_size) # d(dy)/dx, d(dx)/dx
+    d2y_dy, d2x_dy = np.gradient(dy, cell_size) # d(dy)/dy, d(dx)/dy
+    d2y_dx, d2x_dx = np.gradient(dx, cell_size) # d(dy)/dx, d(dx)/dx
 
     # General curvature (Laplacian)
     # The source used d2x + d2y from a nested gradient call which might be interpreted differently.
@@ -252,27 +255,3 @@ def get_dem_features_with_coordinates(dem_path):
         if 'dataset' in locals() and dataset is not None:
             dataset = None # Ensure dataset is closed on error
         return None
-
-# --- Example Usage (Illustrative) ---
-# # Assuming you have the feature calculation functions defined elsewhere
-# # from your_module import calculate_slope, calculate_aspect # etc.
-#
-# # Replace 'calculate_slope_placeholder' and 'calculate_aspect_placeholder'
-# # in the main function with your actual feature calculation functions.
-#
-# dem_file_path = "path/to/your_dem.tif" # Replace with your DEM file path
-# features_df = get_dem_features_with_coordinates(dem_file_path)
-#
-# if features_df is not None and not features_df.empty:
-#     print(features_df.head())
-#     # Now 'features_df' contains columns: 'x', 'y', 'elevation', 'slope', 'aspect', ...
-#     # This DataFrame can be used to:
-#     # 1. Join with your main dataset if it also has 'x' and 'y' coordinates.
-#     #    Example: main_df.merge(features_df, on=['x', 'y'], how='left')
-#     #    (Note: exact coordinate matches can be tricky due to floating point precision;
-#     #     spatial joins considering proximity might be better if using libraries like GeoPandas).
-#     # 2. Export to formats like CSV: features_df.to_csv("dem_features.csv", index=False)
-#     #    This creates a file similar to an XYZ file but with more attributes [5].
-# else:
-#     print("Failed to extract features or DEM was empty.")
-

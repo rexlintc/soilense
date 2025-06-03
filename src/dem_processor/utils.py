@@ -1,4 +1,47 @@
+from logging import Logger
+import numpy as np
 from osgeo import gdal, osr
+from typing import List
+
+def handle_dem_nodata(dem_array: List[List], nodata_value: float, logger: Logger) -> np.ndarray:
+    dem_array_handled = dem_array.astype(np.float64)
+    if nodata_value is not None:
+        logger.info(f"Handling NoData value: {nodata_value}")
+        nodata_mask = (dem_array_handled == nodata_value)
+        dem_array_handled[nodata_mask] = np.nan
+        
+        total_cell_count = dem_array_handled.size
+        nodata_cell_count = np.sum(nodata_mask)
+        data_cell_count = total_cell_count - nodata_cell_count
+        logger.info(f"Number of cells: {total_cell_count}")
+        logger.info(f"Number of NoData cells found: {nodata_cell_count}")
+        logger.info(f"Number of data cells found: {data_cell_count}")
+        logger.info(f"Data type after handling: {dem_array_handled.dtype}")
+
+    else:
+        logger.info("No explicit NoData value found in raster metadata. Proceeding without handling.")
+    return dem_array_handled
+
+def get_features_at_coordinates(coordinates):
+    features = []
+    for coord in coordinates:
+        grid_bounds = find_grid_bounds(coord)
+        relevant_dem_ids = set()
+        for grid_id in grid_bounds:
+            relevant_dem_ids.update(grid_to_dem[grid_id])
+
+        for dem_id in relevant_dem_ids:
+            # Fetch and process the DEM data
+            slope, other_features = fetch_and_process_dem(dem_files[dem_id], coord)
+            features.append((slope, other_features))
+
+    return features
+
+def find_grid_bounds(coord):
+    minx, miny = coord
+    grid_bounds = [(minx + i * cell_size, miny + j * cell_size, minx + (i + 1) * cell_size, miny + (j + 1) * cell_size)
+                  for i in range(int((maxx - minx) / cell_size)) for j in range(int((maxy - miny) / cell_size))]
+    return grid_bounds
 
 def get_dem_info(dem_path=None, dataset=None):
     """
