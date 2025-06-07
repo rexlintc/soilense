@@ -6,6 +6,7 @@ full_lithology_training_data.csv
 full_grouped_lithology_training_data.csv
 boundary_2p5_interval_ungrouped_lithology_dem_training_data.csv
 boundary_2p5_interval_grouped_lithology_dem_training_data.csv
+*.csv
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
