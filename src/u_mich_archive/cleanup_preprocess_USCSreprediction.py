@@ -60,7 +60,7 @@ dict_uscsRules_keyword = {
            "keywords": ["with fine"], 
            "group": "sand"},
     "ML": {"ukeywords": ["very fine sand", "rock flour", "silty fine sand", "clayey fine sand", "clayey silt", "slight plasticity"], 
-           "keywords": ["inorganic silt"], 
+           "keywords": ["inorganic silt"], # TODO: Fix
            "group": "silt"},
     "CL": {"ukeywords": ["low to medium plasticity", "gravelly clay", "sandy clay", "silty clay", "lean clay"], 
            "keywords": ["inorganic clay"], 
